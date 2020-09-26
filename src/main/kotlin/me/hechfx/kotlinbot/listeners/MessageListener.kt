@@ -8,8 +8,7 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter
 open class MessageListener: ListenerAdapter() {
 
     private val commands = listOf(
-        PingCommand(),
-        UserinfoCommand()
+        PingCommand()
     )
 
     override fun onGuildMessageReceived(event: GuildMessageReceivedEvent) {
