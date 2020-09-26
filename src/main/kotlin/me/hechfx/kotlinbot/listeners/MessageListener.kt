@@ -1,14 +1,15 @@
 package me.hechfx.kotlinbot.listeners
 
+import me.hechfx.kotlinbot.commands.AvatarCommand
 import me.hechfx.kotlinbot.commands.PingCommand
-import me.hechfx.kotlinbot.commands.UserinfoCommand
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent
 import net.dv8tion.jda.api.hooks.ListenerAdapter
 
 open class MessageListener: ListenerAdapter() {
 
     private val commands = listOf(
-        PingCommand()
+        PingCommand(),
+        AvatarCommand()
     )
 
     override fun onGuildMessageReceived(event: GuildMessageReceivedEvent) {
